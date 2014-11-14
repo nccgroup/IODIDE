@@ -16,11 +16,11 @@ https://github.com/nccgroup/IODIDE/wiki
 
 ## Pre-requisites
 
-Python
+* Python
 
-wxPython
+* wxPython
 
-pyserial
+* pyserial
 
 ## Platforms
 
