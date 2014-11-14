@@ -4,12 +4,11 @@ Released as open source by NCC Group Plc - http://www.nccgroup.com/
 
 Developed by Andy Davis, andy dot davis at nccgroup dot com
 
-https://www.github.com/nccgroup/umap
+https://github.com/nccgroup/IODIDE
 
 Released under AGPL see LICENSE for more information
 
-Includes the PowerPC disassember from cxmon by Christian Bauer, Marc Hellwig (http://cxmon.cebix.net)
-
+Includes the PowerPC disassembler from cxmon by Christian Bauer, Marc Hellwig (http://cxmon.cebix.net)
 
 ## Documentation
 
