@@ -398,6 +398,10 @@ class gdbproto:
 	self.lastregvals= ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"]
 	self.currentheap = self.heapstart
 
+	if (len(sys.argv) ==2):
+		self.routerserialport = int(sys.argv[1])-1
+	
+
 
 
 #-------Get view of GUI--------------------------------------------------------------------
@@ -619,7 +623,7 @@ class gdbproto:
 
 		if self.continued == False:
 			try:
-				self.ser = serial.Serial(15, timeout=1)  # open first serial port         	
+				self.ser = serial.Serial(self.routerserialport, timeout=1)  # open first serial port         	
       			except:
               			wx.MessageBox("Serial communication error", caption="Error", style=wx.OK|wx.ICON_ERROR, parent=self.win)
 				return(1)
