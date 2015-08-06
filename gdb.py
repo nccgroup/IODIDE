@@ -11,6 +11,7 @@ import re
 from ctypes import *
 from iodideGUI import TestSearchCtrl
 from socket import *
+import ctypes
 
 try:
     from agw import hyperlink as hl
@@ -3144,7 +3145,8 @@ class gdbproto:
 	addr = int(address[0:8],16)
 	displaybuffer = "<html><body><font size=\"9\" face=\"Fixedsys\" color=\"black\">"
 	
-	dis = cdll.disass #access disass.dll
+#	dis = cdll.disass #access disass.dll
+	dis = ctypes.cdll.LoadLibrary("disass.dll") #access disass.dll
 	result = create_string_buffer('\000' * 32)
 	
 	i = j = l = x = y = 0
